@@ -1,0 +1,7 @@
+[user]
+	name = Luiz Felipe Machado
+	email = 56140722+luizfelmach@users.noreply.github.com
+[core]
+	editor = nano -w
+[init]
+	defaultBranch = main
