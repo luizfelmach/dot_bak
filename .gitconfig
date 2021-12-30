@@ -5,3 +5,7 @@
 	editor = nano -w
 [init]
 	defaultBranch = main
+[alias]
+	s = status -s
+	lg = log --oneline --decorate --graph --all
+	unstage = restore --staged
