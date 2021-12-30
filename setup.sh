@@ -8,4 +8,4 @@ echo -e "\nHello, $HOSTNAME@$USER!\n"
 ln -s -f $PWD/.gitconfig $HOME
 
 # Install zsh config
-ln -s -f $PWQ/.zshrc $HOME
+ln -s -f $PWD/.zshrc $HOME
