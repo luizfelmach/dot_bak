@@ -9,3 +9,6 @@
 	s = status -s
 	lg = log --oneline --decorate --graph --all
 	unstage = restore --staged
+	co = checkout
+	cb = checkout -b
+	b = branch -a
