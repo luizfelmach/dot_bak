@@ -12,3 +12,6 @@
 	co = checkout
 	cb = checkout -b
 	b = branch -a
+	ac = !git add . && git commit
+	cm = commit -m
+	main = checkout main
