@@ -2,7 +2,7 @@
 	name = Luiz Felipe Machado
 	email = 56140722+luizfelmach@users.noreply.github.com
 [core]
-	editor = nano -w
+	editor = vim
 [init]
 	defaultBranch = main
 [alias]
