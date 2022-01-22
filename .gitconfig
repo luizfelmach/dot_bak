@@ -15,3 +15,5 @@
 	ac = !git add . && git commit
 	cm = commit -m
 	main = checkout main
+[pull]
+	ff = only
