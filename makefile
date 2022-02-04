@@ -4,6 +4,17 @@ all:
 git-config:
 	cp git/.gitconfig ~
 
+gnome-config:
+	mkdir -p ~/.themes
+	tar -xf ./gnome/themes/Orchis-theme/release/Orchis-purple.tar.xz --directory ~/.themes
+	gsettings set org.gnome.desktop.interface gtk-theme "Orchis-purple-dark"
+	mkdir -p ~/.icons
+	./gnome/icons/Fluent-icon-theme/install.sh -d ~/.icons purple
+	gsettings set org.gnome.desktop.interface icon-theme "Fluent-purple-dark"
+	mkdir -p ~/.icons/Nordzy-cursors
+	tar -xf ./gnome/cursors/Nordzy-cursors/archives/Nordzy-cursors.tar.gz --directory ~/.icons/Nordzy-cursors
+	gsettings set  org.gnome.desktop.interface cursor-theme "Nordzy-cursors"
+
 zsh-config:
 	cp zsh/.zshrc ~
 	cp -fR ./zsh/themes/spaceship-prompt ~/.oh-my-zsh/custom/themes/spaceship-prompt
