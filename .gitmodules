@@ -10,3 +10,6 @@
 [submodule "zsh/plugins/zsh-completions"]
 	path = zsh/plugins/zsh-completions
 	url = https://github.com/zsh-users/zsh-completions
+[submodule "gnome/themes/Orchis-theme"]
+	path = gnome/themes/Orchis-theme
+	url = https://github.com/vinceliuice/Orchis-theme
