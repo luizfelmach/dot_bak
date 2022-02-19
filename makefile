@@ -1,4 +1,4 @@
-all:
+	all:
 	@echo -e "\nHello, ${HOSTNAME}@${USER}!\n"
 
 git-config:
@@ -22,3 +22,10 @@ zsh-config:
 	cp -fR ./zsh/plugins/fast-syntax-highlighting ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
 	cp -fR ./zsh/plugins/zsh-autosuggestions ~/.oh-my-zsh/custom/plugins/zsh-autosuggestions
 	cp -fR ./zsh/plugins/zsh-completions ~/.oh-my-zsh/custom/plugins/zsh-completions
+
+
+vim-config:
+	mkdir -p ~/.config/nvim/
+	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+		cp vim/init.vim ~/.config/nvim/
+
