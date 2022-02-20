@@ -12,6 +12,7 @@ plugins=(
 source $ZSH/oh-my-zsh.sh
 
 alias zshconfig="nano ~/.zshrc"
+alias v="nvim"
 
 SPACESHIP_PROMPT_ORDER=(
   user          # Username section

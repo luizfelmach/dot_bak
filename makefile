@@ -1,4 +1,4 @@
-	all:
+all:
 	@echo -e "\nHello, ${HOSTNAME}@${USER}!\n"
 
 git-config:
