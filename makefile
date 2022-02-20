@@ -27,5 +27,5 @@ zsh-config:
 vim-config:
 	mkdir -p ~/.config/nvim/
 	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-		cp vim/init.vim ~/.config/nvim/
-
+	cp vim/init.vim ~/.config/nvim/
+	nvim +PlugInstall +qall
