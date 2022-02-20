@@ -1,4 +1,4 @@
-    " Plugins
+" Plugins
 
 call plug#begin()
     Plug 'vim-airline/vim-airline'
