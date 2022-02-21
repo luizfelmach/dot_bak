@@ -16,5 +16,7 @@ call plug#begin()
     Plug 'honza/vim-snippets'
     Plug 'jiangmiao/auto-pairs'
     Plug 'mhinz/vim-startify'
+    Plug 'airblade/vim-gitgutter'
+    Plug 'tpope/vim-fugitive'
 call plug#end()
 
