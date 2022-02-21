@@ -24,6 +24,7 @@ set autoread
 set mouse=a
 set clipboard=unnamedplus
 set shortmess+=c
+set cursorline
 
 filetype on
 filetype plugin on
