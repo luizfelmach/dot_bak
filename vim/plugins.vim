@@ -15,5 +15,6 @@ call plug#begin()
     Plug 'neoclide/coc.nvim', {'branch': 'release'}
     Plug 'honza/vim-snippets'
     Plug 'jiangmiao/auto-pairs'
+    Plug 'mhinz/vim-startify'
 call plug#end()
 
