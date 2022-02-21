@@ -6,14 +6,14 @@ git-config:
 
 gnome-config:
 	mkdir -p ~/.themes
-	tar -xf ./gnome/themes/Orchis-theme/release/Orchis-purple.tar.xz --directory ~/.themes
-	gsettings set org.gnome.desktop.interface gtk-theme "Orchis-purple-dark"
+	wget https://github.com/dracula/gtk/archive/master.zip
+	unzip -o master.zip -d ~/.themes
+	gsettings set org.gnome.desktop.interface gtk-theme "gtk-master"
+	gsettings set org.gnome.desktop.wm.preferences theme "gtk-master"
+	rm master.zip
 	mkdir -p ~/.icons
 	./gnome/icons/Fluent-icon-theme/install.sh -d ~/.icons purple
 	gsettings set org.gnome.desktop.interface icon-theme "Fluent-purple-dark"
-	mkdir -p ~/.icons/Nordzy-cursors
-	tar -xf ./gnome/cursors/Nordzy-cursors/archives/Nordzy-cursors.tar.gz --directory ~/.icons/Nordzy-cursors
-	gsettings set  org.gnome.desktop.interface cursor-theme "Nordzy-cursors"
 
 zsh-config:
 	cp zsh/.zshrc ~
@@ -25,6 +25,9 @@ zsh-config:
 
 
 vim-config:
+	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
+	unzip -o FiraCode.zip -d ~/.local/share/fonts/ 
+	rm FiraCode.zip
 	pip install pynvim
 	mkdir -p ~/.config/nvim/
 	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
