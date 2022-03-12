@@ -28,8 +28,8 @@ zsh-config:
 
 
 vim-config:
-	pip install pynvim
 	mkdir -p ~/.config/nvim/
+	pip install pynvim
 	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 	cp vim/* ~/.config/nvim/
 	nvim +PlugInstall +qall
