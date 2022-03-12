@@ -1,20 +1,35 @@
-" Maps
+" All maps
 
-map <C-h> <C-w>h
-map <C-j> <C-w>j
-map <C-k> <C-w>k
-map <C-l> <C-w>l
+map cc <Plug>NERDCommenterInvert
+
+map <C-s> :w<CR>
+
+" Normal
+
+nmap <C-j> <C-w>j
+nmap <C-k> <C-w>k
+nmap <C-h> <C-w>h
+nmap <C-l> <C-w>l
+
 nmap bn :bn<CR>
 nmap bp :bp<CR>
 nmap bd :bd<CR>
 nmap bt :tabe<CR>
-nnoremap <A-j> :m .+1<CR>==
-nnoremap <A-k> :m .-2<CR>==
+
+nmap <A-j> :m .+1<CR>==
+nmap <A-k> :m .-2<CR>==
+
+nmap <Tab> :NERDTreeToggle<CR>
+
+" Insertion
+
 inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
+
+:imap jj <Esc>
+
+" Visual
+
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
-:imap jj <Esc>
-map cc <Plug>NERDCommenterInvert
-nmap <C-e> :NERDTreeToggle<CR>
 
