@@ -25,6 +25,7 @@ set mouse=a
 set clipboard=unnamedplus
 set shortmess+=c
 set cursorline
+set shell=/usr/bin/zsh
 
 filetype on
 filetype plugin on

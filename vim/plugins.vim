@@ -18,5 +18,6 @@ call plug#begin()
     Plug 'mhinz/vim-startify'
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
+    Plug 'akinsho/toggleterm.nvim'
 call plug#end()
 
