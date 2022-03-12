@@ -5,6 +5,9 @@ git-config:
 	cp git/.gitconfig ~
 
 gnome-config:
+	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
+	unzip -o FiraCode.zip -d ~/.local/share/fonts/ 
+	rm FiraCode.zip
 	mkdir -p ~/.themes
 	wget https://github.com/dracula/gtk/archive/master.zip
 	unzip -o master.zip -d ~/.themes
@@ -25,9 +28,6 @@ zsh-config:
 
 
 vim-config:
-	wget https://github.com/ryanoasis/nerd-fonts/releases/download/v2.1.0/FiraCode.zip
-	unzip -o FiraCode.zip -d ~/.local/share/fonts/ 
-	rm FiraCode.zip
 	pip install pynvim
 	mkdir -p ~/.config/nvim/
 	curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
