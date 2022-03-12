@@ -17,6 +17,7 @@ gnome-config:
 	mkdir -p ~/.icons
 	./gnome/icons/Fluent-icon-theme/install.sh -d ~/.icons purple
 	gsettings set org.gnome.desktop.interface icon-theme "Fluent-purple-dark"
+	./gnome/terminal/gnome-terminal/install.sh -s Dracula --skip-dircolors
 
 zsh-config:
 	cp zsh/.zshrc ~
