@@ -1,0 +1,13 @@
+-----------------------------------
+     Apps & Tools to remember
+-----------------------------------
+
+nvim
+docker
+python
+pip
+nodejs
+bashtop
+vscode
+zsh
+
