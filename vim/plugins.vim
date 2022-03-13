@@ -19,5 +19,6 @@ call plug#begin()
     Plug 'airblade/vim-gitgutter'
     Plug 'tpope/vim-fugitive'
     Plug 'akinsho/toggleterm.nvim'
+    Plug 'rhysd/vim-clang-format'
 call plug#end()
 
