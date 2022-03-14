@@ -52,3 +52,8 @@ let g:ctrlp_show_hidden = 1
 let g:NERDSpaceDelims = 1
 let g:NERDDefaultAlign = 'left'
 
+" Clang Format 
+
+let g:clang_format#auto_format = 1
+let g:clang_format#auto_filetypes = ["c", "cpp"]
+
