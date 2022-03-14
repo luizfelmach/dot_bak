@@ -25,6 +25,8 @@ nmap <C-t> :ToggleTerm direction=float<CR>
 
 nmap q :q<CR>
 
+nmap <C-h> :Startify<CR>
+
 " Insertion
 
 inoremap <A-j> <Esc>:m .+1<CR>==gi
