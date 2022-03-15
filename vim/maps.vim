@@ -19,13 +19,11 @@ nmap bt :tabe<CR>
 nmap <A-j> :m .+1<CR>==
 nmap <A-k> :m .-2<CR>==
 
-nmap <Tab> :NERDTreeToggle<CR>
+nmap <Tab> :CocCommand explorer<CR>
 
 nmap <C-t> :ToggleTerm direction=float<CR>
 
 nmap q :q<CR>
-
-nmap <C-h> :Startify<CR>
 
 " Insertion
 

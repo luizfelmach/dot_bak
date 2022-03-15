@@ -20,5 +20,6 @@ call plug#begin()
     Plug 'tpope/vim-fugitive'
     Plug 'akinsho/toggleterm.nvim'
     Plug 'rhysd/vim-clang-format'
+    Plug 'frazrepo/vim-rainbow'
 call plug#end()
 

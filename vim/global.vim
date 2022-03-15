@@ -57,3 +57,7 @@ let g:NERDDefaultAlign = 'left'
 let g:clang_format#auto_format = 1
 let g:clang_format#auto_filetypes = ["c", "cpp"]
 
+" Vim Rainbow
+
+let g:rainbow_active = 1
+

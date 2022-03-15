@@ -1,6 +1,6 @@
 " Coc Extensions
 
-let g:coc_global_extensions = ['coc-snippets', 'coc-clangd', 'coc-jedi', 'coc-json', ]
+let g:coc_global_extensions = ['coc-snippets', 'coc-clangd', 'coc-jedi', 'coc-json', 'coc-tsserver', 'coc-explorer' ]
 
 if has("nvim-0.5.0") || has("patch-8.1.1564")
   set signcolumn=number
