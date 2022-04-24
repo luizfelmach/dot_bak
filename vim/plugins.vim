@@ -1,25 +1,50 @@
 " Plugins
 
 call plug#begin()
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
-    Plug 'ryanoasis/vim-devicons'
-    Plug 'sheerun/vim-polyglot'
-    Plug 'preservim/nerdtree'
-    Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
-    Plug 'Xuyuanp/nerdtree-git-plugin'
-    Plug 'dracula/vim', { 'as': 'dracula' }
-    Plug 'Yggdroot/indentLine'
-    Plug 'ctrlpvim/ctrlp.vim'
-    Plug 'preservim/nerdcommenter'
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
-    Plug 'honza/vim-snippets'
-    Plug 'jiangmiao/auto-pairs'
-    Plug 'mhinz/vim-startify'
-    Plug 'airblade/vim-gitgutter'
-    Plug 'tpope/vim-fugitive'
-    Plug 'akinsho/toggleterm.nvim'
-    Plug 'rhysd/vim-clang-format'
-    Plug 'frazrepo/vim-rainbow'
+    " Layout
+        " Themes
+            Plug 'dracula/vim', { 'as': 'dracula' }
+
+        " Status bar
+            Plug 'vim-airline/vim-airline'
+            Plug 'vim-airline/vim-airline-themes'
+            Plug 'ryanoasis/vim-devicons'
+
+        " Initial start
+            Plug 'mhinz/vim-startify'
+
+    " Languages
+        " Language server protocol
+            Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
+            Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+
+        " Syntax
+            Plug 'sheerun/vim-polyglot'
+            Plug 'honza/vim-snippets'
+
+        " Tools
+            Plug 'preservim/nerdcommenter'
+
+        " Layout
+            Plug 'Yggdroot/indentLine'
+            Plug 'jiangmiao/auto-pairs'
+            Plug 'frazrepo/vim-rainbow'
+
+    " Tools
+        " Explorer
+            Plug 'preservim/nerdtree'
+            Plug 'tiagofumo/vim-nerdtree-syntax-highlight'
+            Plug 'Xuyuanp/nerdtree-git-plugin'
+
+        " Find files
+            Plug 'ctrlpvim/ctrlp.vim'
+
+        " Integrated terminal
+            Plug 'akinsho/toggleterm.nvim'
+
+        " Git & Github
+            Plug 'airblade/vim-gitgutter'
+            Plug 'tpope/vim-fugitive'
+
 call plug#end()
 

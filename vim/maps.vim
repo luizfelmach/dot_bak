@@ -19,7 +19,7 @@ nmap bt :tabe<CR>
 nmap <A-j> :m .+1<CR>==
 nmap <A-k> :m .-2<CR>==
 
-nmap <Tab> :CocCommand explorer<CR>
+nmap <Tab> :NERDTreeToggle<CR>
 
 nmap <C-t> :ToggleTerm direction=float<CR>
 
