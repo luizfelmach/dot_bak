@@ -23,7 +23,10 @@ call plug#begin()
             Plug 'honza/vim-snippets'
 
         " Tools
-            Plug 'preservim/nerdcommenter'
+            Plug 'tomtom/tcomment_vim'
+            Plug 'tpope/vim-surround'
+            Plug 'mg979/vim-visual-multi', {'branch': 'master'}
+            Plug 'thinca/vim-quickrun'
 
         " Layout
             Plug 'Yggdroot/indentLine'
@@ -45,6 +48,9 @@ call plug#begin()
         " Git & Github
             Plug 'airblade/vim-gitgutter'
             Plug 'tpope/vim-fugitive'
+
+        " Others
+            Plug 'junegunn/goyo.vim'
 
 call plug#end()
 

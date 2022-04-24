@@ -47,11 +47,6 @@ let g:airline#extensions#branch#enabled = 1
 
 let g:ctrlp_show_hidden = 1
 
-" NerdCommenter
-
-let g:NERDSpaceDelims = 1
-let g:NERDDefaultAlign = 'left'
-
 " LSP
 
 let g:LanguageClient_serverCommands = {

@@ -1,45 +1,50 @@
 " All maps
 
-map cc <Plug>NERDCommenterInvert
+" Leader key
+let mapleader = ' '
 
-map <C-s> :w<CR>
+" Maps leader
+map <silent> <leader><cr> :noh<cr>
 
-" Normal
+" Key F<1-12>
+map <f2> :NERDTreeToggle<CR>
+map <f3> :ToggleTerm direction=float<CR>
+tnoremap <f3> <C-\><C-n> :ToggleTerm direction=float<CR>
+:tnoremap jj <C-\><C-n> 
+inoremap <f3> <Esc>:ToggleTerm direction=float<CR>
+map <f4> :Goyo <CR>
+map <f5> :QuickRun <CR>
+map <f6> :call LanguageClient#textDocument_formatting() <CR>
+map <f12> :so ~/.config/nvim/init.vim <CR>
+map <f7> :echo "Livre!" <CR>
+map <f8> :echo "Livre!" <CR>
+map <f9> :echo "Livre!" <CR>
 
+" Move between buffers
 nmap <C-j> <C-w>j
 nmap <C-k> <C-w>k
 nmap <C-h> <C-w>h
 nmap <C-l> <C-w>l
 
+" Next/ Previous/ Delete/ Create (Buffer)
 nmap bn :bn<CR>
 nmap bp :bp<CR>
 nmap bd :bd<CR>
 nmap bt :tabe<CR>
 
+
+" Line Down/Up 
 nmap <A-j> :m .+1<CR>==
 nmap <A-k> :m .-2<CR>==
-
-nmap <Tab> :NERDTreeToggle<CR>
-
-nmap <C-t> :ToggleTerm direction=float<CR>
-
-nmap q :q<CR>
-
-" Insertion
-
 inoremap <A-j> <Esc>:m .+1<CR>==gi
 inoremap <A-k> <Esc>:m .-2<CR>==gi
-
-inoremap <C-t> <Esc>:ToggleTerm direction=float<CR>
-
-:imap jj <Esc>
-
-" Visual
-
 vnoremap <A-j> :m '>+1<CR>gv=gv
 vnoremap <A-k> :m '<-2<CR>gv=gv
 
-" Terminal
+" Quit/Save file
+nmap <leader>q :q<CR>
+nmap <leader>w :w!<cr>
 
-tnoremap <C-t> <C-\><C-n> :ToggleTerm direction=float<CR>
-:tnoremap jj <C-\><C-n> 
+" Quit insertion mode 
+:imap jj <Esc>
+
