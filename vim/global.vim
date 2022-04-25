@@ -3,8 +3,8 @@
 set number
 set termguicolors
 set tabstop=2
-set softtabstop=4
-set shiftwidth=4
+set softtabstop=2
+set shiftwidth=2
 set expandtab
 set smarttab
 set smartindent
@@ -51,7 +51,8 @@ let g:ctrlp_show_hidden = 1
 
 let g:LanguageClient_serverCommands = {
     \ 'c': ['clangd'],
-    \ 'cpp': ['clangd']
+    \ 'cpp': ['clangd'],
+    \ 'python': ['pyls']
     \ }
 let g:LanguageClient_autoStart = 1
 let g:deoplete#enable_at_startup = 1

@@ -16,7 +16,6 @@ map <f4> :Goyo <CR>
 map <f5> :QuickRun <CR>
 map <f6> :call LanguageClient#textDocument_formatting() <CR>
 map <f12> :so ~/.config/nvim/init.vim <CR>
-map <f7> :echo "Livre!" <CR>
 map <f8> :echo "Livre!" <CR>
 map <f9> :echo "Livre!" <CR>
 
@@ -48,3 +47,10 @@ nmap <leader>w :w!<cr>
 " Quit insertion mode 
 :imap jj <Esc>
 
+" Language Client
+nmap <silent> K <Plug>(lcn-hover)
+nmap <silent> gd <Plug>(lcn-definition)
+nmap <silent> <F7> <Plug>(lcn-rename)
+
+let g:LanguageClient_useVirtualText = "No"
+let g:LanguageClient_changeThrottle = 0.4
