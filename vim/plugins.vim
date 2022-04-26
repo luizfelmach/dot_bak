@@ -15,8 +15,9 @@ call plug#begin()
 
     " Languages
         " Language server protocol
-            Plug 'autozimu/LanguageClient-neovim', {'branch': 'next', 'do': 'bash install.sh'}
-            Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+            Plug 'prabirshrestha/vim-lsp'
+            Plug 'prabirshrestha/asyncomplete.vim'
+            Plug 'prabirshrestha/asyncomplete-lsp.vim'
 
         " Syntax
             Plug 'sheerun/vim-polyglot'
@@ -27,6 +28,7 @@ call plug#begin()
             Plug 'tpope/vim-surround'
             Plug 'mg979/vim-visual-multi', {'branch': 'master'}
             Plug 'thinca/vim-quickrun'
+            Plug 'ntpeters/vim-better-whitespace'
 
         " Layout
             Plug 'Yggdroot/indentLine'
@@ -51,6 +53,7 @@ call plug#begin()
 
         " Others
             Plug 'junegunn/goyo.vim'
+            Plug 'voldikss/vim-translator'
 
 call plug#end()
 
