@@ -1,0 +1,6 @@
+" Sources
+
+source ~/.config/vim/plugins.vim
+source ~/.config/vim/global.vim
+source ~/.config/vim/maps.vim
+
