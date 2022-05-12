@@ -7,8 +7,8 @@ sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.
 cp zsh/zshrc ~/.zshrc
 
 # Themes
-cp -fR ./zsh/themes/spaceship-prompt ~/.oh-my-zsh/custom/themes/spaceship-prompt
-ln -s -f ~/.oh-my-zsh/custom/themes/spaceship-prompt/spaceship.zsh-theme ~/.oh-my-zsh/custom/themes/spaceship.zsh-theme
+mkdir -p "$HOME/.zsh"
+cp -fR ./zsh/themes/pure ~/.zsh/pure/
 
 # Plugins
 cp -fR ./zsh/plugins/fast-syntax-highlighting ~/.oh-my-zsh/custom/plugins/fast-syntax-highlighting
