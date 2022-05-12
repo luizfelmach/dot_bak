@@ -4,7 +4,7 @@
 
 # Configs
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-cp zsh/.zshrc ~
+cp zsh/zshrc ~/.zshrc
 
 # Themes
 cp -fR ./zsh/themes/spaceship-prompt ~/.oh-my-zsh/custom/themes/spaceship-prompt
