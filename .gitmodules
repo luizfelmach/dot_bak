@@ -10,9 +10,6 @@
 [submodule "gnome/icons/Fluent-icon-theme"]
 	path = gnome/icons/Fluent-icon-theme
 	url = https://github.com/vinceliuice/Fluent-icon-theme
-[submodule "gnome/terminal/gnome-terminal"]
-	path = gnome/terminal/gnome-terminal
-	url = https://github.com/dracula/gnome-terminal
 [submodule "zsh/themes/pure"]
 	path = zsh/themes/pure
 	url = https://github.com/sindresorhus/pure
