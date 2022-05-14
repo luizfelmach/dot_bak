@@ -15,4 +15,6 @@ source $ZSH/oh-my-zsh.sh
 
 alias zshconfig="vim ~/.zshrc"
 alias v="nvim"
+alias ..="cd ../"
+alias ...="cd ../../"
 
