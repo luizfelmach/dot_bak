@@ -20,3 +20,5 @@ alias v="nvim"
 alias ..="cd ../"
 alias ...="cd ../../"
 
+bindkey -v
+
