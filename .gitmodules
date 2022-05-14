@@ -10,3 +10,9 @@
 [submodule "zsh/themes/pure"]
 	path = zsh/theme/pure
 	url = https://github.com/sindresorhus/pure
+[submodule "zsh/plugins/ls"]
+	path = zsh/plugins/ls
+	url = https://github.com/zpm-zsh/ls
+[submodule "zsh/plugins/material-colors"]
+	path = zsh/plugins/material-colors
+	url = https://github.com/zpm-zsh/material-colors

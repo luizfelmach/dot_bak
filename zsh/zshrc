@@ -9,6 +9,8 @@ plugins=(
 	fast-syntax-highlighting
 	zsh-autosuggestions
 	zsh-completions
+    ls
+    material-colors
 )
 
 source $ZSH/oh-my-zsh.sh
