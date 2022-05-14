@@ -5,10 +5,10 @@ autoload -U promptinit; promptinit
 prompt pure
 
 plugins=(
-	git
-	fast-syntax-highlighting
-	zsh-autosuggestions
-	zsh-completions
+    git
+    fast-syntax-highlighting
+    zsh-autosuggestions
+    zsh-completions
     ls
     material-colors
 )
