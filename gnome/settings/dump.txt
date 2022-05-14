@@ -166,11 +166,6 @@ side-panel-size=200
 size=(900, 688)
 state=87168
 
-[login-screen]
-enable-fingerprint-authentication=true
-enable-password-authentication=true
-enable-smartcard-authentication=false
-
 [mutter]
 attach-modal-dialogs=true
 center-new-windows=true
