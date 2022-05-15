@@ -34,6 +34,7 @@ filetype indent on
 syntax on
 
 autocmd vimenter * ++nested colorscheme gruvbox
+set bg=dark
 
 " Airline
 
