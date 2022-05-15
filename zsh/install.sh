@@ -13,7 +13,9 @@ if ! command -v zsh &> /dev/null; then
 fi
 
 # Download submodules
-git submodule update --init --recursive
+cd $ABS_PATH
+git submodule update --init --recursive $ABS_PATH/plugins
+git submodule update --init --recursive $ABS_PATH/theme
 
 # Configs
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
