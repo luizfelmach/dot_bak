@@ -33,5 +33,4 @@ cp -fR $ABS_PATH/plugins/zsh-completions $HOME/.oh-my-zsh/custom/plugins/zsh-com
 cp -fR $ABS_PATH/plugins/ls $HOME/.oh-my-zsh/custom/plugins/ls
 cp -fR $ABS_PATH/plugins/material-colors $HOME/.oh-my-zsh/custom/plugins/material-colors
 
-exec zsh
 exit
