@@ -3,7 +3,7 @@
 call plug#begin()
     " Layout
         " Themes
-            Plug 'dracula/vim', { 'as': 'dracula' }
+            Plug 'morhetz/gruvbox'
 
         " Status bar
             Plug 'vim-airline/vim-airline'
