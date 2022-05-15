@@ -9,7 +9,7 @@ if ! command -v zsh &> /dev/null; then
     exit
 fi
 
-if [ ! -n "$(ls -A .zsh/theme/pure 2>/dev/null)"]; then
+if [ ! -n "$(ls -A ./zsh/theme/pure 2>/dev/null)"]; then
   echo "Please, download all submodules!"
 fi
 
