@@ -9,10 +9,6 @@ if ! command -v zsh &> /dev/null; then
     exit
 fi
 
-if [ ! -n "$(ls -A ./zsh/theme/pure 2>/dev/null)"]; then
-  echo "Please, download all submodules!"
-fi
-
 # Configs
 if [ ! -d "$HOME/.oh-my-zsh" ]; then
     curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh | sh
