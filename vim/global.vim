@@ -25,7 +25,13 @@ set mouse=a
 set clipboard=unnamedplus
 set shortmess+=c
 set cursorline
-set shell=/usr/bin/zsh
+
+if executable("zsh")
+    set shell=/usr/bin/zsh
+else
+    set shell=/bin/bash
+endif
+
 
 filetype on
 filetype plugin on
