@@ -1,5 +1,9 @@
 #!/bin/bash
 
 # Copy git config file to home my linux
-cp git/gitconfig ~/.gitconfig
+
+SCRIPT=`realpath $0`
+ABS_PATH=`dirname $SCRIPT`
+
+cp $ABS_PATH/gitconfig $HOME/.gitconfig
 
