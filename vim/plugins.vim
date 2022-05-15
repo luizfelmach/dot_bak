@@ -45,7 +45,9 @@ call plug#begin()
             Plug 'ctrlpvim/ctrlp.vim'
 
         " Integrated terminal
+        if has("nvim")
             Plug 'akinsho/toggleterm.nvim'
+        endif
 
         " Git & Github
             Plug 'airblade/vim-gitgutter'
