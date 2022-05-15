@@ -56,6 +56,12 @@ if executable('clangd')
         \ 'cmd': {server_info->['clangd']},
         \ 'allowlist': ['c', 'cpp'],
         \ })
+elseif executable(expand($HOME) . '/.local/bin/clangd')
+    au User lsp_setup call lsp#register_server({
+        \ 'name': 'clangd',
+        \ 'cmd': {server_info->[expand($HOME) . '/.local/bin/clangd']},
+        \ 'allowlist': ['c', 'cpp'],
+        \ })
 endif
 
 " Need to install python language server
