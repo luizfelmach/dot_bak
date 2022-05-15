@@ -8,10 +8,10 @@ map <silent> <leader><cr> :noh<cr>
 
 " Key F<1-12>
 map <f2> :NERDTreeToggle<CR>
-map <f3> :ToggleTerm size=12 direction=horizontal<CR>
-tnoremap <f3> <C-\><C-n> :ToggleTerm size=12 direction=horizontal<CR>
+map <f3> :FloatermToggle --height=0.8 --width=0.7<CR>
+tnoremap <f3> <C-\><C-n> :FloatermToggle --height=0.8 --width=0.7<CR>
 :tnoremap jj <C-\><C-n>
-inoremap <f3> <Esc>:ToggleTerm size=12 direction=horizontal<CR>
+inoremap <f3> <Esc>:FloatermToggle --height=0.8 --width=0.7<CR>
 map <f4> :Goyo <CR>
 map <f5> :QuickRun <CR>
 map <f6> :LspDocumentFormat <CR>
