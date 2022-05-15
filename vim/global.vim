@@ -127,3 +127,7 @@ highlight link LspHintHighlight LspHintText
 
 let g:rainbow_active = 1
 
+" NERDTree
+
+let NERDTreeMinimalUI = 1
+let NERDTreeDirArrows = 1
