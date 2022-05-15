@@ -1,5 +1,9 @@
 #!/bin/bash
 
 # Load gnome settings
-dconf load /org/gnome/ < ./gnome/settings/settings.txt
+
+SCRIPT=`realpath $0`
+ABS_PATH=`dirname $SCRIPT`
+
+dconf load /org/gnome/ < $ABS_PATH/settings.txt
 
