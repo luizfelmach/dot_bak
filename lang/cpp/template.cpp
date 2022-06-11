@@ -18,7 +18,5 @@ using namespace std;
 #define sz(x) (int((x).size()))
 
 int main() { _
-
-    cout << "Ola mundo" << endl;
     return 0;
 }
