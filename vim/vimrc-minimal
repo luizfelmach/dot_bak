@@ -1,0 +1,15 @@
+syntax on
+set rnu
+set clipboard=unnamedplus
+set mouse=a
+set tabstop=4
+set autoindent
+set shiftwidth=4
+set softtabstop=4
+set smarttab
+set expandtab
+set smartcase
+set background=dark
+colorscheme elflord
+
+autocmd filetype cpp nnoremap <F5> :w <bar> !g++ -ulimit -Wall -Wno-unused-result -std=c++11   -O2   % -o %:r && ./%:r <CR>

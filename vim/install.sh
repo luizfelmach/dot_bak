@@ -8,6 +8,7 @@ ABS_PATH=`dirname $SCRIPT`
 echo "Installation vim/nvim on linux..."
 echo "[1] VIM"
 echo "[2] NVIM"
+echo "[3] VIM MINIMAL"
 read -p "Your option: " option
 
 if (($option == 1)); then
@@ -29,5 +30,8 @@ elif (($option == 2)); then
     rm -rf $HOME/.config/nvim/vimrc/
     mv $HOME/.config/nvim/nvimrc $HOME/.config/nvim/init.vim
     nvim +PlugInstall +qall
+
+elif (($option == 3)); then
+    cp $ABS_PATH/vimrc-minimal $HOME/.vimrc
 fi
 
