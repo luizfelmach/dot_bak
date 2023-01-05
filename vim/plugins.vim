@@ -4,6 +4,7 @@ call plug#begin()
     " Layout
         " Themes
             Plug 'morhetz/gruvbox'
+            Plug 'matsuuu/pinkmare'
 
         " Status bar
             Plug 'vim-airline/vim-airline'
